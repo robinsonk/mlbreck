@@ -1,0 +1,462 @@
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 19px;
+  line-height: 1.5;
+}
+p.light {
+  color: white;
+}
+
+h2, h3, .add-on {
+  font-family: freight-big-pro, serif;
+  font-weight: 500;
+  color: #4E4E4E;
+  line-height: 1.1;
+  letter-spacing: 0.5px;
+}
+h2.light, h3.light, .add-on.light {
+  color: white;
+}
+
+h2 {
+  font-size: 64px;
+}
+
+h3, .add-on {
+  font-size: 48px;
+}
+h3.upper, .add-on.upper {
+  text-transform: uppercase;
+}
+
+.add-on.small {
+  font-size: 36px;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+.flex.reverse {
+  flex-direction: row-reverse;
+}
+.flex.wrap {
+  flex-wrap: wrap;
+}
+
+button {
+  cursor: pointer;
+}
+
+body {
+  margin: 0;
+}
+
+.main-header {
+  background-image: url(../images/breckenridge-co-rocky-mountains.jpg);
+  background-size: cover;
+}
+
+.header-content {
+  padding: 48px 10% 304px 10%;
+}
+.header-content nav {
+  margin-bottom: 273px;
+}
+.header-content nav img {
+  width: 134px;
+  height: 127px;
+}
+.header-content h1 {
+  width: 60%;
+  max-width: 711px;
+  font-family: freight-big-pro, serif;
+  font-size: 72px;
+  font-weight: 300;
+  color: #4E4E4E;
+  padding: 0;
+  margin: 0 0 87px 0;
+}
+.header-content .cta {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #C2986B;
+  padding: 0 150px 10px 0;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  color: #4E4E4E;
+  font-size: 32px;
+  font-weight: 500;
+}
+.header-content .cta:hover, .header-content .cta:focus {
+  color: #C2986B;
+  transition: 0.4s all;
+}
+.header-content .cta a {
+  text-decoration: none;
+  color: #4E4E4E;
+  transition: 0.4s all;
+}
+
+.nav-pages {
+  width: 70%;
+  max-width: 970px;
+  list-style-type: none;
+  list-style: none;
+  align-items: center;
+  padding: 0;
+}
+.nav-pages li a {
+  text-decoration: none;
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+  color: #4E4E4E;
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: 0.4s all;
+  padding: 0 8px 0 8px;
+}
+.nav-pages li a:hover, .nav-pages li a:focus {
+  color: #C2986B;
+  transition: 0.4s all;
+}
+.nav-pages button {
+  background-color: #324932;
+  color: white;
+  text-transform: uppercase;
+  font-size: 18px;
+  padding: 19px;
+  border: 1px solid #324932;
+  border-radius: 5px;
+  transition: 0.4s all;
+}
+.nav-pages button:hover, .nav-pages button:focus {
+  background-color: transparent;
+  color: #324932;
+  transition: 0.4s all;
+}
+
+@media (max-width: 1232px) {
+  nav.flex {
+    flex-direction: column;
+    align-content: center;
+  }
+
+  .header-content {
+    padding: 48px 48px 304px 48px;
+  }
+  .header-content nav {
+    margin-bottom: 150px;
+  }
+  .header-content nav img {
+    display: block;
+    margin: 0 auto 0 auto;
+  }
+  .header-content h1 {
+    text-align: center;
+    width: 80%;
+    max-width: 80%;
+    margin: 0 auto 90px auto;
+  }
+  .header-content a {
+    text-decoration: none;
+    color: #4E4E4E;
+    transition: 0.4s all;
+  }
+  .header-content .cta {
+    display: block;
+    margin: 0 auto 0 auto;
+  }
+}
+.standout {
+  position: relative;
+  padding: 203px 54px;
+  overflow: hidden;
+}
+.standout .standout-text {
+  padding: 165px 0;
+  max-width: 687px;
+  margin: 0 auto 0 auto;
+  position: relative;
+}
+.standout .standout-text h2 {
+  margin-bottom: 76px;
+}
+.standout .standout-text p {
+  font-size: 20px;
+  max-width: 600px;
+}
+.standout .ml-flair {
+  position: absolute;
+  right: -65%;
+  bottom: 15%;
+  opacity: 5%;
+}
+
+.about {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.about .gold-lines.horizontal {
+  position: absolute;
+  width: 50%;
+  right: 80px;
+  top: 180px;
+}
+.about .gold-lines.horizontal .line-single {
+  background-color: #C2986B;
+  display: block;
+  height: 2px;
+  width: 70%;
+  margin: 10px 0 30px 0;
+  margin-left: auto;
+}
+.about .gold-lines.horizontal .line-single.line2 {
+  height: 3px;
+  width: 55%;
+  margin-left: auto;
+}
+.about .gold-lines.vertical {
+  position: absolute;
+  display: flex;
+  height: 40%;
+  top: 320px;
+  left: 60px;
+}
+.about .gold-lines.vertical .line-single {
+  background-color: #C2986B;
+  display: block;
+  height: 95%;
+  width: 2px;
+  margin: 10px 0 30px 0;
+  margin-left: auto;
+}
+.about .gold-lines.vertical .line-single.line2 {
+  height: 75%;
+  width: 3px;
+  margin: 30px;
+  margin-top: 80px;
+}
+.about .green-section {
+  background-color: #324932;
+  color: white;
+  margin-right: 200px;
+  padding: 100px 70px 200px 100px;
+}
+.about h2 {
+  max-width: 700px;
+  margin-bottom: 96px;
+}
+.about .green-text-wrapper {
+  max-width: 980px;
+  position: relative;
+  margin-left: 70px;
+}
+.about .green-text-wrapper p {
+  max-width: 450px;
+}
+.about .green-text-wrapper .add-on {
+  text-align: right;
+  max-width: 568px;
+  margin-left: auto;
+  margin-top: 93px;
+}
+
+.display-img-holder {
+  position: relative;
+  height: 800px;
+}
+.display-img-holder .large-display-img {
+  position: absolute;
+  top: -20%;
+  right: 0;
+  width: 80%;
+  max-width: 1300px;
+}
+
+.fadeinright, .fadeinright-sooner {
+  opacity: 0;
+  margin-right: -300px;
+  max-width: 100%;
+}
+
+.fadeinleft-sooner {
+  opacity: 0;
+  margin-left: -300px;
+  max-width: 100%;
+}
+
+.fadein, .fadein-onload, .fadein-quick {
+  opacity: 0;
+}
+
+.about-info-container {
+  width: 100%;
+  position: relative;
+  padding: 100px 70px;
+  justify-content: center;
+  align-items: center;
+  z-index: 4;
+}
+.about-info-container .green-slice {
+  display: block;
+  height: 100%;
+  width: 300px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #324932;
+  z-index: 0;
+}
+.about-info-container img {
+  margin: 0 70px 0 0;
+  width: 750px;
+  height: 100%;
+  position: relative;
+  z-index: 4;
+}
+.about-info-container .about-info-text-container {
+  width: 40%;
+}
+.about-info-container .about-info-text-container h2 {
+  margin-top: 0;
+}
+
+.numbers-section {
+  width: 100%;
+  margin-top: 176px;
+  padding: 0 40px;
+}
+.numbers-section .num-container {
+  position: relative;
+  height: 370px;
+}
+.numbers-section .num-container .number {
+  position: absolute;
+  left: 31%;
+  color: #E5E5E5;
+  font-family: freight-big-pro, serif;
+  font-size: 288px;
+  font-weight: 500;
+}
+.numbers-section .num-container .number.mid-num {
+  left: 25%;
+}
+.numbers-section .num-container .number-info {
+  display: block;
+  position: relative;
+  color: #4e4e4e;
+  font-family: freight-big-pro, serif;
+  font-size: 48px;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 150px;
+  padding: 0 60px;
+  line-height: 2.5;
+}
+.numbers-section .num-container .number-info.mid-num-info {
+  min-width: 401px;
+  padding: 0 60px;
+  box-sizing: content-box;
+  border-left: 1px solid #C2986B;
+  border-right: 1px solid #C2986B;
+}
+
+.rooms {
+  width: 100%;
+}
+
+.section-h2-container {
+  width: 85%;
+  position: relative;
+  margin: 376px auto 272px auto;
+}
+.section-h2-container h2 {
+  background-color: white;
+  padding: 0 50px 0 0;
+  text-transform: uppercase;
+  width: max-content;
+  position: relative;
+  z-index: 3;
+}
+.section-h2-container .h2-line {
+  display: block;
+  position: absolute;
+  top: 45%;
+  height: 2px;
+  width: 100%;
+  background-color: #C2986B;
+  z-index: 0;
+}
+
+.room-container {
+  align-items: center;
+  margin-bottom: 168px;
+  align-self: center;
+}
+.room-container .room-slider img {
+  max-width: 950px;
+}
+.room-container .room-info-container {
+  width: 50%;
+}
+.room-container .room-info-container .room-info-inner-wrapper {
+  padding: 0 80px;
+  max-width: 533px;
+  margin: 0 auto;
+}
+.room-container .room-info-container .room-info-inner-wrapper h3 {
+  font-size: 42px;
+}
+.room-container .room-info-container .room-info-inner-wrapper .add-on {
+  font-size: 38px;
+}
+
+.lodge-green-section {
+  position: relative;
+  width: 100%;
+  height: 1950px;
+  padding: 217px 150px 217px 0;
+}
+.lodge-green-section .lodge-green-info-cont {
+  background-color: #324932;
+  width: 100%;
+  height: 100%;
+  padding: 200px 300px 200px 200px;
+}
+.lodge-green-section .lodge-green-info-cont h3, .lodge-green-section .lodge-green-info-cont p {
+  max-width: 600px;
+}
+.lodge-green-section .lodge-green-info-cont h3 {
+  font-size: 54px;
+}
+.lodge-green-section .lodge-green-info-cont .add-on {
+  margin-top: 200px;
+  font-size: 45px;
+  text-align: right;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #C2986B;
+}
+.lodge-green-section .absolute-img {
+  position: absolute;
+}
+.lodge-green-section .top-img {
+  right: 0;
+  top: 0;
+  width: 600px;
+}
+.lodge-green-section .bottom-img {
+  left: 0;
+  bottom: 0;
+  width: 950px;
+}
+
+/*# sourceMappingURL=style.css.map */
