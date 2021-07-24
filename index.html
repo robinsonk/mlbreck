@@ -416,9 +416,9 @@
     <div class="booking-container">
         <h3 class="light">You're just a few clicks away from an unforgettable stay.</h3>
         <div class="book-buttons-cont flex">
-            <a href=""><button class="book-button-single">AIRBNB</button></a>
-            <a href=""><button class="book-button-single">EXPEDIA</button></a>
-            <a href=""><button class="book-button-single">VRBO</button></a>
+            <a href="https://www.airbnb.com/rooms/48764913?source_impression_id=p3_1627162173_ZvqLrdBG8reSI9XB" target="_blank"><button class="book-button-single">AIRBNB</button></a>
+            <a href="https://www.expedia.com/Breckenridge-Hotels-Majestic-Lodge-Retreat-Amenities-Views.h59076110.Hotel-Information" target="_blank"><button class="book-button-single">EXPEDIA</button></a>
+            <a href="https://www.effortlessstay.com/rentals/majestic-lodge-retreat-amenities-views" target="_blank"><button class="book-button-single">EFFORTLESS</button></a>
         </div>
     </div>
 
@@ -433,6 +433,8 @@
 
             <label for="message">Message</label>
             <textarea name="message" id="message" cols="30" rows="10"></textarea>
+
+            <button onclick="sendClick(event)">SEND</button>
         </form>
     </div>
 </section>
@@ -443,6 +445,10 @@
 </div>
 
 <script>
+    function sendClick(event) {
+        event.preventDefault();
+    }
+
     let slideIndex = [1, 1, 1, 1, 1, 1, 1];
     let slideId = ["singleSlide1", "singleSlide2", "singleSlide3", "singleSlide4", "singleSlide5", "singleSlide6", "singleSlide7"];
     showSlides(1, 0);

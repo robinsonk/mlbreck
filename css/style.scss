@@ -312,6 +312,14 @@ body {
     }    
 }
 
+@media screen and (min-width: 1700px) {
+    .about {
+        .green-section {
+            padding: 100px 300px 200px 300px !important;
+        }
+    }
+}
+
 .display-img-holder {
     position: relative;
     height: 800px;
@@ -376,6 +384,7 @@ body {
     width: 100%;
     margin-top: 176px;
     padding: 0 40px;
+    justify-content: space-evenly;
     .num-container {
         position: relative;
         height: 370px;
@@ -474,6 +483,12 @@ body {
                 font-size: 38px;
             }
         }
+    }
+}
+
+@media screen and (min-width: 1700px) {
+    .room-container .room-info-container .room-info-inner-wrapper {
+        padding: 0;
     }
 }
 
@@ -740,7 +755,13 @@ body {
     }
     .play-content {
         width: 55%;
+        max-width: 800px;
         padding: 0 100px 0 100px;
+        margin-left: auto;
+        margin-right: auto;
+        p {
+            max-width: 616px;
+        }
     }
 }
 
@@ -856,10 +877,10 @@ body {
         }
         .book-buttons-cont {
             padding-top: 94px;
-            max-width: 750px;
+            max-width: 900px;
             margin: 0 auto;
             .book-button-single {
-                width: 200px;
+                width: 250px;
                 height: 100px;
                 background-color: $mlGold;
                 color: white;
@@ -907,9 +928,28 @@ body {
             border: none;
             border-radius: 5px;
             background-color: $mlBeige;
+            padding-left: 30px;
+            font-size: 20px;
         }
         textarea {
             height: 172px;
+            padding-top: 30px;
+        }
+        button {
+            background-color: $mlGreen;
+            border: 2px solid $mlGreen;
+            border-radius: 5px;
+            color: white;
+            width: 200px;
+            height: 80px;
+            font-family: $bodyText;
+            font-size: 24px;
+            transition: all .4s;
+            &:hover {
+                background-color: transparent;
+                color: $mlGreen;
+                transition: all .4s;
+            }
         }
     }
 }

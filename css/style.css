@@ -286,6 +286,11 @@ body {
   margin-top: 93px;
 }
 
+@media screen and (min-width: 1700px) {
+  .about .green-section {
+    padding: 100px 300px 200px 300px !important;
+  }
+}
 .display-img-holder {
   position: relative;
   height: 800px;
@@ -350,6 +355,7 @@ body {
   width: 100%;
   margin-top: 176px;
   padding: 0 40px;
+  justify-content: space-evenly;
 }
 .numbers-section .num-container {
   position: relative;
@@ -448,6 +454,11 @@ body {
   font-size: 38px;
 }
 
+@media screen and (min-width: 1700px) {
+  .room-container .room-info-container .room-info-inner-wrapper {
+    padding: 0;
+  }
+}
 .singleSlide1, .singleSlide2, .singleSlide3, .singleSlide4, .singleSlide5, .singleSlide6 {
   display: none;
   transition: 0.4s, all;
@@ -697,7 +708,13 @@ body {
 }
 .play .play-content {
   width: 55%;
+  max-width: 800px;
   padding: 0 100px 0 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.play .play-content p {
+  max-width: 616px;
 }
 
 .all-amenities {
@@ -807,11 +824,11 @@ body {
 }
 .book .booking-container .book-buttons-cont {
   padding-top: 94px;
-  max-width: 750px;
+  max-width: 900px;
   margin: 0 auto;
 }
 .book .booking-container .book-buttons-cont .book-button-single {
-  width: 200px;
+  width: 250px;
   height: 100px;
   background-color: #C2986B;
   color: white;
@@ -857,9 +874,28 @@ body {
   border: none;
   border-radius: 5px;
   background-color: #F6F5EA;
+  padding-left: 30px;
+  font-size: 20px;
 }
 .contact .contact-form textarea {
   height: 172px;
+  padding-top: 30px;
+}
+.contact .contact-form button {
+  background-color: #324932;
+  border: 2px solid #324932;
+  border-radius: 5px;
+  color: white;
+  width: 200px;
+  height: 80px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  transition: all 0.4s;
+}
+.contact .contact-form button:hover {
+  background-color: transparent;
+  color: #324932;
+  transition: all 0.4s;
 }
 
 /*# sourceMappingURL=style.css.map */
