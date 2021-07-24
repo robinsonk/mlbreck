@@ -27,7 +27,7 @@
             </ul>
         </nav>
         <h1 class="fadein-onload">Experience Breckenridge like never before</h1>
-        <a href="#lodge"><button class="cta">See the lodge</button></a>
+        <a href="#rooms"><button class="cta">See the rooms</button></a>
     </div>
 </header>
 
@@ -57,7 +57,7 @@
                 <div>
                     <p class="light">High in the alpine terrain of Breckenridge, just 5 minutes from downtown, this majestic
                         home is a dazzling, one-of-a-kind option for your next getaway.</p>
-                    <p class="light">Perfect for wedding parties, reunions, or even a corporate retreat, experience all
+                    <p class="light">Perfect for wedding parties, reunions, or even a corporate retreat, eventxperience all
                         Breckenridge has to offer in this extravagant-yet-comfortable lodge.</p>
                 </div>
                 <p class="light">Rest assured, we’ve provided peace of mind for your getaway: This home features an
@@ -107,9 +107,15 @@
 
     <div class="room-container flex">
         <div class="room-slider fadein-quick">
-            <img src="./images/relaxation-room-1.jpg" alt="">
+            <div class="singleSlide1">
+                <img src="./images/relaxation-room-1.jpg" alt="">
+            </div>
+            <div class="singleSlide1">
+                <img src="./images/breck-scenery-1.jpg" alt="">
+            </div>
             <div class="slider-nav">
-
+                <a href="#" class="nav-icon prev" tabindex="0" onclick="plusSlides(-1, 0, event)">&#10094;</a>
+                <a href="#" class="nav-icon next" tabindex="0" onclick="plusSlides(1, 0, event)">&#10095;</a>
             </div>
         </div>
         <div class="room-info-container">
@@ -123,10 +129,17 @@
     </div>
 
     <div class="room-container flex reverse">
+        <div class="hibearnation-green-accent right-accent"></div>
         <div class="room-slider fadein-quick">
-            <img src="./images/adventure-room-1.jpg" alt="">
+            <div class="singleSlide2">
+                <img src="./images/adventure-room-1.jpg" alt="">
+            </div>
+            <div class="singleSlide2">
+                <img src="./images/breck-scenery-1.jpg" alt="">
+            </div>
             <div class="slider-nav">
-                
+                <a href="#" class="nav-icon prev" tabindex="0" onclick="plusSlides(-1, 1, event)">&#10094;</a>
+                <a href="#" class="nav-icon next" tabindex="0" onclick="plusSlides(1, 1, event)">&#10095;</a>
             </div>
         </div>
         <div class="room-info-container">
@@ -141,9 +154,15 @@
 
     <div class="room-container flex">
         <div class="room-slider fadein-quick">
-            <img src="./images/split-room-1.jpg" alt="">
+            <div class="singleSlide3">
+                <img src="./images/split-room-1.jpg" alt="">
+            </div>
+            <div class="singleSlide3">
+                <img src="./images/breck-scenery-1.jpg" alt="">
+            </div>
             <div class="slider-nav">
-                
+                <a href="#" class="nav-icon prev" tabindex="0" onclick="plusSlides(-1, 2, event)">&#10094;</a>
+                <a href="#" class="nav-icon next" tabindex="0" onclick="plusSlides(1, 2, event)">&#10095;</a>
             </div>
         </div>
         <div class="room-info-container">
@@ -158,9 +177,15 @@
 
     <div class="room-container flex reverse">
         <div class="room-slider fadein-quick">
-            <img src="./images/seasons-room-1.jpg" alt="">
+            <div class="singleSlide4">
+                <img src="./images/seasons-room-1.jpg" alt="">
+            </div>
+            <div class="singleSlide4">
+                <img src="./images/breck-scenery-1.jpg" alt="">
+            </div>
             <div class="slider-nav">
-                
+                <a href="#" class="nav-icon prev" tabindex="0" onclick="plusSlides(-1, 3, event)">&#10094;</a>
+                <a href="#" class="nav-icon next" tabindex="0" onclick="plusSlides(1, 3, event)">&#10095;</a>
             </div>
         </div>
         <div class="room-info-container">
@@ -174,10 +199,17 @@
     </div>
 
     <div class="room-container flex">
+        <div class="hibearnation-green-accent"></div>
         <div class="room-slider fadein-quick">
-            <img src="./images/hibearnation-room-1.jpg" alt="">
+            <div class="singleSlide5">
+                <img src="./images/hibearnation-room-1.jpg" alt="">
+            </div>
+            <div class="singleSlide5">
+                <img src="./images/breck-scenery-1.jpg" alt="">
+            </div>
             <div class="slider-nav">
-                
+                <a href="#" class="nav-icon prev" tabindex="0" onclick="plusSlides(-1, 4, event)">&#10094;</a>
+                <a href="#" class="nav-icon next" tabindex="0" onclick="plusSlides(1, 4, event)">&#10095;</a>
             </div>
         </div>
         <div class="room-info-container">
@@ -192,9 +224,15 @@
 
     <div class="room-container flex reverse">
         <div class="room-slider fadein-quick">
-            <img src="./images/nature-room-1.jpg" alt="">
+            <div class="singleSlide6">
+                <img src="./images/nature-room-1.jpg" alt="">
+            </div>
+            <div class="singleSlide6">
+                <img src="./images/breck-scenery-1.jpg" alt="">
+            </div>
             <div class="slider-nav">
-                
+                <a href="#" class="nav-icon prev" tabindex="0" onclick="plusSlides(-1, 5, event)">&#10094;</a>
+                <a href="#" class="nav-icon next" tabindex="0" onclick="plusSlides(1, 5, event)">&#10095;</a>
             </div>
         </div>
         <div class="room-info-container">
@@ -215,8 +253,19 @@
     </div>
 
     <div class="lodge-green-section">
-        <img class="absolute-img top-img" src="./images/relaxation-room-2.jpg" alt="A bathroom with a fireplace and jacuzzi bathtub.">
-        <img class="absolute-img bottom-img" src="./images/lodge-main-room.jpg" alt="A spacious living room with a view of a rocky mountain forest.">
+        <img class="absolute-img top-img fadeinright" src="./images/relaxation-room-2.jpg" alt="A bathroom with a fireplace and jacuzzi bathtub.">
+        <div class="room-slider">
+            <div  class="singleSlide7">
+                <img class="absolute-img bottom-img" src="./images/lodge-main-room.jpg" alt="A spacious living room with a view of a rocky mountain forest.">
+            </div>
+            <div  class="singleSlide7">
+                <img class="absolute-img bottom-img" src="./images/breckenridge-lodge-exterior.png" alt="A spacious living room with a view of a rocky mountain forest.">
+            </div>
+            <div class="slider-nav lodge-gallery">
+                <a href="#" class="nav-icon prev" tabindex="0" onclick="plusSlides(-1, 6, event)">&#10094;</a>
+                <a href="#" class="nav-icon next" tabindex="0" onclick="plusSlides(1, 6, event)">&#10095;</a>
+            </div>
+        </div>
         <div class="lodge-green-info-cont">
             <h3 class="light">Staycation - Rocky Mountain Lodge Style</h3>
             <p class="light">This home is the perfect choice.</p>
@@ -224,7 +273,167 @@
             <p class="light">The Majestic Lodge has everything to turn your getaway from routine to unforgettable in an instant.</p>
             <p class="add-on light">There's a little something <br>for everyone here.</p>
         </div>
+    </div>
 
+    <div class="floor-plan-section flex">
+        <div class="plan-col col1">
+            <div class="gold-lines vertical">
+                <span class="line-single line1"></span>
+            </div>
+            <h3>Welcome to 6,700+ Square Feet of Perfection</h3>
+            <div class="plan-content content1">
+                <p>After a long day on the slopes or the fairway, there’s nothing better than sinking into one of the two jetted tubs or the 8-person private hot tub before making memories around the two fire pits right on the property.</p>
+                <p>In fact, there’s so much to do, you may never want to leave the Lodge at all.</p>
+            </div>
+            <img class="floorplan-bottom fadein-quick" src="./images/second-floor-plan-lodge.png" alt="A floor plan showing the blueprint og the lodge's second floor.">
+        </div>
+        <div class="plan-col col2">
+            <div class="gold-lines horizontal fadeinright-sooner">
+                <span class="line-single line2"></span>
+                <span class="line-single line1"></span>
+            </div>
+            <img class="floorplan-main fadein" src="./images/main-floor-plan-lodge.png" alt="A floor plan showing the blueprint og the lodge's main floor.">
+            <div class="plan-content content2">
+                <p class="bold-p">Just a few of the comforts waiting for you at the lodge:</p>
+                <ul>
+                    <li>Smart home features powered by Savant</li>
+                    <li>Spacious game room with gaming systems, billiards, and more</li>
+                    <li>Wet bar with high-end cocktail and coffee systems</li>
+                    <li>Private hot tub, and so much more</li>
+                </ul>
+                <p>Whether your goal is adventure, exploration, or a lavish staycation, the Majestic Lodge is everything you can dare to hope for in your mountain vacation experience. This home has it all, <a href="#amenities">and more</a>.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="lodge-kitchen-section">
+        <img class="fadeinright-sooner" src="./images/breckenridge-deck.png" alt="A kitchen table with a vase of flowers on top in front of a fireplace.">
+        <div class="green-section"></div>
+    </div>
+</section>
+
+<section role="region" class="amenities" id="amenities">
+    <div class="section-h2-container">
+        <h2>Amenities</h2>
+        <span class="h2-line"></span>
+    </div>
+
+    <div class="play flex">
+        <div class="play-content">
+            <h3>ENJOY</h3>
+            <p>If you’re ready to wind down with a drink (or get the party started), you’re going to love the wet bar complete with both cocktail mixing and JURA coffee systems.</p>
+            <p>Mix a few drinks and unwind in the 8-seater hot tub or one of the two cozy firepits just outside.</p>
+            <p>Craving some privacy? Relax in one of the Lodge’s ensuites with two jetted tubs, one of which boasts a luxury fireplace right inside the ensuite.</p>
+        </div>
+        <img class="fadein-quick" src="./images/table-lodge.jpg" alt="A bouquet of flowers in front of a cozy fireplace">
+    </div>
+    
+    <div class="all-amenities">
+        <div class="gold-lines vertical">
+            <span class="line-single line1"></span>
+        </div>
+        <div class="beige-background"></div>
+        <img class="long-photo" src="./images/breck-scenery-ski-lift.jpg" alt="A ski lift over the Brecknridge, Colorado rocky mountains.">
+        <h3>ALL AMENITIES</h3>
+        <div class="all-amenities-content">
+            
+            <h4>Essentials</h4>
+            <ul>
+                <li>Bed Linens</li>
+                <li>Dryer</li>
+                <li>Essentials</li>
+                <li>Extra Bedding</li>
+                <li>Fireplaces</li>
+                <li>Game Room</li>
+                <li>Garage</li>
+                <li>Hair Dryer</li>
+                <li>Hangers</li>
+                <li>Heating</li>
+                <li>Hot Water</li>
+                <li>Iron & Board</li>
+                <li>Kitchen</li>
+                <li>Living Room</li>
+                <li>Parking</li>
+                <li>Private Entrance</li>
+                <li>Private Home</li>
+                <li>Toiletries</li>
+                <li>Towels</li>
+                <li>Washer</li>
+                <li>Wifi</li>
+            </ul>
+
+            <h4>Entertainment</h4>
+            <ul>
+                <li>Foosball</li>
+                <li>Virtual Golf</li>
+                <li>Music Library</li>
+                <li>Pool Table</li>
+                <li>Smart TVs</li>
+                <li>Toys</li>
+                <li>Video Games</li>
+                <li>Coffee System</li>
+                <li>Cocktail Machine</li>
+            </ul>
+
+            <h4>Nearby Activities</h4>
+            <ul>
+                <li>Breckenridge</li>
+                <li>Skiing</li>
+                <li>Hiking</li>
+                <li>Sledding</li>
+                <li>Theme Parks</li>
+                <li>Shopping</li>
+            </u>
+        </div>
+        <div class="explore-blocks flex">
+            <div class="content-block">
+                <h3>PLAY</h3>
+                <p>Jump into a game of billiards on the professional pool table or compete for a round or two of foosball! If video games are more your style, wait until you see the gaming system with over 3,200 games including beloved retro favorites!</p>
+                <p>Need a little practice before hitting the golf course? Hone your skills through a game of virtual golf on the Foresight Golf Simulator. There’s a little something for everyone here.</p>
+            </div>
+            <div class="content-block">
+                <h3>EXPLORE</h3>
+                <p>Step outside of the Majestic Lodge and into the beautifully scenic Rocky Mountains!</p>
+                <p>Explore all Breckenridge has to offer from lively downtown and Breckenridge Ski Resort, or take it easy at the Breckenridge Golf Course or on a scenic waterfall hike. Your perfect escape into nature is just a few minutes away.</p>
+            </div>
+        </div>
+    </div>
+
+    <img class="bottom-img" src="./images/breckenridge-deck.png" alt="The deck of the lodge with ample seating and firepits">
+
+    <p class="add-on">Get ready for an adventure.</p>
+    <div class="scenery-block flex">
+        <img src="./images/breck-scenery-1.jpg" alt="A lake in Breckenridge, CO">
+        <img src="./images/breck-scenery-2.jpg" alt="A lake at sunset in Breckenridge, CO">
+    </div>
+</section>
+
+<section role="region"  class="book" id="book">
+    <div class="section-h2-container">
+        <h2>Book and Contact</h2>
+        <span class="h2-line"></span>
+    </div>
+    <div class="booking-container">
+        <h3 class="light">You're just a few clicks away from an unforgettable stay.</h3>
+        <div class="book-buttons-cont flex">
+            <a href=""><button class="book-button-single">AIRBNB</button></a>
+            <a href=""><button class="book-button-single">EXPEDIA</button></a>
+            <a href=""><button class="book-button-single">VRBO</button></a>
+        </div>
+    </div>
+
+    <div class="contact" id="contact">
+        <h3>Questions? We'd love to help!</h3>
+        <form class="contact-form" action="">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name">
+
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email">
+
+            <label for="message">Message</label>
+            <textarea name="message" id="message" cols="30" rows="10"></textarea>
+        </form>
     </div>
 </section>
 
@@ -233,7 +442,42 @@
 
 </div>
 
-
+<script>
+    let slideIndex = [1, 1, 1, 1, 1, 1, 1];
+    let slideId = ["singleSlide1", "singleSlide2", "singleSlide3", "singleSlide4", "singleSlide5", "singleSlide6", "singleSlide7"];
+    showSlides(1, 0);
+    showSlides(1, 1);
+    showSlides(1, 2);
+    showSlides(1, 3);
+    showSlides(1, 4);
+    showSlides(1, 5);
+    showSlides(1, 6);
+    
+    function plusSlides(n, no, event) {
+    event.preventDefault();
+      showSlides(slideIndex[no] += n, no);
+    }
+    
+    function showSlides(n, no) {
+    let i;
+    let x = document.getElementsByClassName(slideId[no]);
+      if (n > x.length) {slideIndex[no] = 1}    
+      if (n < 1) {slideIndex[no] = x.length}
+      for (i = 0; i < x.length; i++) {
+         x[i].style.display = "none";  
+      }
+      x[slideIndex[no]-1].style.display = "block";  
+      let incomingSlide = x[slideIndex[no]-1];
+      incomingSlide.animate([
+          {
+            opacity: 0
+          },
+          {
+            opacity: 1
+          }
+      ], 1200)
+    }
+</script>
     <script src="js/script.js"></script>    
 </body>
 </html>

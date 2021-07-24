@@ -25,7 +25,22 @@ p {
     &.light {
         color: white;
     }
+    &.bold-p {
+        font-weight: 600;
+    }
 }
+
+ul {
+    margin: 30px 0 40px 0;
+    li {
+        font-family: $bodyText;
+        font-size: 19px;
+        font-weight: 300;
+        list-style-type: circle;
+        margin-bottom: 15px;
+    }
+} 
+
 
 h2, h3, .add-on {
     font-family: $headerText;
@@ -86,8 +101,7 @@ body {
     nav {
         margin-bottom: 273px;
         img {
-            width: 134px;
-            height: 127px;
+            width: 110px;
         }   
     }
     h1 {
@@ -124,20 +138,24 @@ body {
 
 .nav-pages {
     width: 70%;
-    max-width: 970px;
+    max-width: 670px;
     list-style-type: none;
     list-style: none;
     align-items: center;
     padding: 0;
+    margin: 0;
+    li {
+        list-style-type: none;
+    }
     li a {
         text-decoration: none;
-        font-size: 18px;
+        font-size: 14px;
         font-family: $bodyText;
         color: $textGrey;
         font-weight: 500;
         text-transform: uppercase;
         transition: .4s all;
-        padding: 0 8px 0 8px;
+        padding: 0 4px 0 4px;
         &:hover, &:focus {
             color: $mlGold;
             transition: .4s all;
@@ -147,8 +165,8 @@ body {
         background-color: $mlGreen;
         color: white;
         text-transform: uppercase;
-        font-size: 18px;
-        padding: 19px;
+        font-size: 14px;
+        padding: 14px;
         border: 1px solid $mlGreen;
         border-radius: 5px;
         transition: .4s all;
@@ -427,11 +445,20 @@ body {
 
 .room-container {
     align-items: center;
-    margin-bottom: 168px;
+    margin-bottom: 228px;
     align-self: center;
+    position: relative;
     .room-slider {
+        position: relative;
+        width: max-content;
+        height: max-content;
+        background-color: white;
+        z-index: 6;
         img {
-            max-width: 950px;
+            width: 950px;
+            position: relative;
+            z-index: 3;
+            transition: .4s, all;
         }
     }
     .room-info-container {
@@ -450,14 +477,92 @@ body {
     }
 }
 
+// Sliders
+
+.singleSlide1, .singleSlide2, .singleSlide3, .singleSlide4, .singleSlide5, .singleSlide6 {
+    display: none;
+    transition: .4s, all;
+    img {
+        vertical-align: middle;
+    }
+}
+
+.slider-nav {
+    position: absolute;
+    height: max-content;
+    right: 0;
+    bottom: -70px;
+    .nav-icon {
+        padding: 8px 18px;
+        margin: 10px;
+        border-radius: 50%;
+        border: 1px solid $mlGold;
+        color: $mlGold;
+        font-size: 28px;
+        font-family: $bodyText;
+        font-weight: 400;
+        cursor: pointer;
+        transition: all .7s;
+        text-decoration: none;
+        &:hover, &:focus {
+            color: white;
+            background-color: $mlGold;
+            transition: all .7s;
+        }
+    }
+    &.lodge-gallery {
+        left: 1000px;
+        bottom: 350px;
+        width: max-content;
+        .nav-icon {
+            margin: 20px;
+        }
+    }
+}
+
+.reverse .slider-nav {
+    left: 0;
+}
+
+.hibearnation-green-accent {
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: $mlGreen;
+    height: 130%;
+    width: 30%;
+    z-index: 0;
+    &.right-accent {
+        left: initial;
+        right: 0;
+        top: -40px;
+        height: 140%;
+    }
+}
+
+
 
 // LODGE --------------------------------------------------
+
+.lodge {
+    overflow: hidden;
+}
 
 .lodge-green-section {
     position: relative;
     width: 100%;
     height: 1950px;
     padding: 217px 150px 217px 0;
+    z-index: 1;
+    .room-slider {
+        width: max-content;
+        height: max-content;
+        background-color: white;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 6;
+    }
     .lodge-green-info-cont {
         background-color: $mlGreen;
         width: 100%;
@@ -481,13 +586,330 @@ body {
         position: absolute;
     }
     .top-img {
+        position: absolute;
         right: 0;
         top: 0;
         width: 600px;
     }
     .bottom-img {
+        position: relative;
         left: 0;
         bottom: 0;
         width: 950px;
+    }
+}
+
+.floor-plan-section {
+    padding: 150px;
+    a {
+        color: $mlGold;
+        text-decoration: none;
+        &:hover {
+            color: $mlGreen;
+        }
+    }
+    .plan-col {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        padding: 50px;
+        position: relative;
+        h3 {
+            margin-bottom: 0;
+        }
+        .content1 {
+            margin: 80px 0 65px 0;
+        }
+        .plan-content {
+            width: 500px;
+        }
+        &.col1 {
+            padding-bottom: 150px;
+        }
+        &.col2 {
+            justify-content: flex-end;
+            p {
+                margin-bottom: 0;
+            }
+            .bold-p {
+                margin-top: 80px;
+                margin-bottom: 20px;
+            }
+        } 
+        .content2 {
+            margin-left: auto;
+        }
+    }
+    img {
+        width: 100%;
+    }
+    .gold-lines {
+        &.horizontal {
+            position: absolute;
+            width: 100%;
+            right: 80px;
+            top: 140px;
+            .line-single {
+                background-color: $mlGold;
+                display: block;
+                height: 2px;
+                width: 85%;
+                margin: 10px 0 20px 0;
+                margin-left: auto;
+                &.line2 {
+                    height: 2px;
+                    width: 60%;
+                    margin-left: auto;
+                }
+            }
+        }
+        &.vertical {
+            position: absolute;
+            display: flex;
+            height: 90%;
+            top: 220px;
+            left: -60px;
+            .line-single {
+                background-color: $mlGold;
+                display: block;
+                height: 55%;
+                width: 2px;
+                margin: 10px 0 30px 0;
+                margin-left: auto;
+            }
+        }
+    }
+    .floorplan-main {
+        margin-top: 240px;
+    }
+}
+
+.lodge-kitchen-section {
+    position: relative;
+    height: 930px;
+    width: 100%;
+    img {
+        width: 100%;
+        height: 650px;
+        object-fit: cover;
+        position: relative;
+        z-index: 3;
+        margin-top: 140px;
+    }
+    .green-section {
+        height: 100%;
+        width: 800px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 1;
+        background-color: $mlGreen;
+    }
+}
+
+
+// AMENITIES
+
+.amenities {
+    position: relative;
+    width: 100%;
+    .bottom-img {
+        display: block;
+        position: relative;
+        z-index: 1;
+        margin-left: auto;
+        bottom: 150px;
+        width: 70%;
+    }
+    .add-on {
+        text-transform: none;
+        padding: 0 120px;
+        text-align: right;
+    }
+    .scenery-block {
+        img {
+            padding: 30px;
+            width: 50%;
+        }
+    }
+}
+
+.play {
+    img {
+        width: 45%;
+    }
+    .play-content {
+        width: 55%;
+        padding: 0 100px 0 100px;
+    }
+}
+
+.all-amenities {
+    height: max-content;
+    position: relative;
+    z-index: 1;
+    margin-top: 250px;
+    padding-bottom: 100px;
+    width: 100%;
+    h3 {
+        padding-left: 150px;
+        margin-top: 200px;
+        position: relative;
+        z-index: 1;
+    }
+    h4 {
+        font-family: $headerText;
+        font-size: 31px;
+        font-weight: normal;
+    }
+    .gold-lines {
+        &.vertical {
+            position: absolute;
+            display: flex;
+            height: 40%;
+            bottom: -80px;
+            left: 60px;
+            z-index: 4;
+            .line-single {
+                background-color: $mlGold;
+                display: block;
+                height: 100%;
+                width: 2px;
+                margin: 10px 0 30px 0;
+                margin-left: auto;
+            }
+        }
+    }
+    .beige-background {
+        height: 100%;
+        width: 85%;
+        background-color: $mlBeige;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 0;
+    }
+    .long-photo {
+        width: 95%;
+        height: 600px;
+        object-fit: cover;
+        position: relative;
+        z-index: 1;
+        top: 60px;
+        left: 0;
+    }
+    .all-amenities-content {
+        height: 500px;
+        overflow: auto;
+        padding: 30px;
+        padding-left: 0;
+        padding-top: 0;
+        margin-left: 150px;;
+        width: 60%;
+        position: relative;
+        z-index: 1;
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            max-width: 700px;
+            li {
+                margin: 20px 60px;
+                width: 200px;
+            }
+        }
+    }    
+}
+
+.explore-blocks {
+    position: relative;
+    z-index: 1;
+    padding: 150px;
+    padding-top: 0;
+    justify-content: flex-start;
+    .content-block {
+        max-width: 400px;
+        h3 {
+            padding: 0;
+            margin-top: 170px;
+        }
+        &:nth-of-type(1) {
+            margin-right: 150px;
+        }
+    }
+}
+
+
+// BOOK
+
+.book {
+    .booking-container {
+        background-color: $mlGreen;
+        width: 100%;
+        padding: 300px;
+        h3 {
+            text-align: center;
+            margin-top: 0;
+            max-width: 750px;
+            display: block;
+            margin: 0 auto;
+        }
+        .book-buttons-cont {
+            padding-top: 94px;
+            max-width: 750px;
+            margin: 0 auto;
+            .book-button-single {
+                width: 200px;
+                height: 100px;
+                background-color: $mlGold;
+                color: white;
+                text-transform: uppercase;
+                font-family: $bodyText;
+                font-size: 22px;
+                letter-spacing: 5px;
+                border: 1px solid $mlGold;
+                border-radius: 5px;
+                transition: all .4s;
+                &:hover {
+                    background-color: transparent;
+                    transition: all .4s;
+                }
+            }
+            
+        }
+    }
+}
+
+.contact {
+    margin-top: 266px;
+    h3 {
+        font-size: 64px;
+        text-align: center;
+    }
+    .contact-form {
+        width: 575px;
+        display: block;
+        margin: 100px auto;
+        padding-bottom: 200px;
+        label, input, textarea {
+            font-family: $bodyText;
+            width: 100%;
+        }
+        label {
+            text-transform: uppercase;
+            font-size: 21px;
+            font-weight: 300;
+        }
+        input, textarea {
+            margin-bottom: 50px;
+            margin-top: 10px;
+            height: 50px;
+            border: none;
+            border-radius: 5px;
+            background-color: $mlBeige;
+        }
+        textarea {
+            height: 172px;
+        }
     }
 }
