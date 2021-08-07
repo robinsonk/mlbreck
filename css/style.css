@@ -851,7 +851,8 @@ body {
   width: 700px;
   margin: 100px auto 0 auto;
 }
-.booking-container iframe p {
+
+.ac-legend-item {
   color: white;
 }
 
