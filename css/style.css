@@ -855,6 +855,9 @@ body {
 .ac-legend-item {
   color: white;
 }
+.ac-legend-item p {
+  font-size: 16px;
+}
 
 .ac-calendar-container table.ac-table {
   border-radius: 8px;
