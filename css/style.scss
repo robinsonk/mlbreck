@@ -901,6 +901,20 @@ body {
     }
 }
 
+.booking-container iframe {
+    display: block;
+    height: 400px;
+    width: 700px;
+    margin: 100px auto 0 auto;
+    p {
+        color: white;
+    }
+}
+
+.ac-calendar-container table.ac-table {
+    border-radius: 8px;
+}
+
 .contact {
     margin-top: 266px;
     h3 {
