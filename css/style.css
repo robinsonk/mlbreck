@@ -821,6 +821,7 @@ body {
   max-width: 750px;
   display: block;
   margin: 0 auto;
+  margin-bottom: 30px;
 }
 .book .booking-container .book-buttons-cont {
   padding-top: 94px;
@@ -845,18 +846,20 @@ body {
   transition: all 0.4s;
 }
 
-.booking-container iframe {
+iframe {
   display: block;
   height: 400px;
   width: 700px;
-  margin: 100px auto 0 auto;
+  margin: 0 auto 0 auto;
+  padding-left: 50px;
 }
 
 .ac-legend-item {
-  color: white;
+  color: "Montserrat", sans-serif;
 }
 .ac-legend-item p {
   font-size: 16px;
+  color: "Montserrat", sans-serif;
 }
 
 .ac-calendar-container table.ac-table {

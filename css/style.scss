@@ -874,6 +874,7 @@ body {
             max-width: 750px;
             display: block;
             margin: 0 auto;
+            margin-bottom: 30px;
         }
         .book-buttons-cont {
             padding-top: 94px;
@@ -901,19 +902,23 @@ body {
     }
 }
 
-.booking-container iframe {
+iframe {
     display: block;
     height: 400px;
     width: 700px;
-    margin: 100px auto 0 auto;
+    margin: 0 auto 0 auto;
+    padding-left: 50px;
 }
 
 .ac-legend-item {
-    color: white;
+    color: $bodyText;
     p {
         font-size: 16px;
+        color: $bodyText;
     }
 }
+
+
 
 .ac-calendar-container table.ac-table {
     border-radius: 8px;
