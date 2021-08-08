@@ -77,6 +77,10 @@ body {
   background-size: cover;
 }
 
+.mobile-tint {
+  background-color: transparent;
+}
+
 .header-content {
   padding: 48px 10% 304px 10%;
 }
@@ -1016,6 +1020,31 @@ iframe {
   .numbers-section .num-container .number-info.mid-num-info {
     min-width: unset;
   }
+
+  .all-amenities .beige-background {
+    width: 93%;
+  }
+
+  .play .play-content {
+    width: 50%;
+  }
+
+  .play img {
+    object-fit: cover;
+    width: 50%;
+  }
+
+  .about-info-container {
+    flex-direction: column;
+  }
+
+  .about-info-container .about-info-text-container h2 {
+    margin-top: 50px;
+  }
+
+  .about .gold-lines.horizontal {
+    width: 35%;
+  }
 }
 @media (max-width: 940px) {
   .flex.about-info-container, .flex.numbers-section, .flex.room-container, .flex.floor-plan-section, .flex.play, .flex.explore-blocks {
@@ -1106,7 +1135,8 @@ iframe {
   }
 
   .about-info-container .green-slice {
-    height: 50%;
+    height: 45%;
+    top: 55px;
   }
 
   .room-container .room-info-container {
@@ -1134,7 +1164,7 @@ iframe {
   }
 
   .slider-nav {
-    right: 20px;
+    right: 70px;
   }
 
   .hibearnation-green-accent.right-accent {
@@ -1162,7 +1192,7 @@ iframe {
   }
 
   .lodge-green-section .room-slider {
-    bottom: 400px;
+    bottom: 500px;
   }
 
   .slider-nav.lodge-gallery {
@@ -1206,6 +1236,328 @@ iframe {
   iframe {
     width: 100%;
     height: 600px;
+  }
+
+  .lodge-green-section .lodge-green-info-cont .add-on {
+    margin-top: 100px;
+  }
+
+  .all-amenities .all-amenities-content {
+    margin-left: 50px;
+    width: 90%;
+  }
+
+  .all-amenities .all-amenities-content ul {
+    max-width: 100%;
+    padding-left: 0;
+  }
+
+  .all-amenities .all-amenities-content ul li {
+    margin: 10px 50px;
+    width: 180px;
+  }
+
+  .explore-blocks .content-block:nth-of-type(1) {
+    margin-right: unset;
+  }
+
+  .book .booking-container {
+    padding-bottom: 0;
+  }
+}
+@media (max-width: 600px) {
+  h3, .add-on {
+    font-size: 38px;
+  }
+
+  iframe {
+    height: 900px;
+  }
+
+  .all-amenities .all-amenities-content {
+    width: 100%;
+    margin-left: 0;
+    padding: 0 40px 0 40px;
+  }
+
+  .all-amenities .beige-background {
+    width: 100%;
+  }
+
+  .all-amenities .all-amenities-content ul li {
+    margin: 10px 30px;
+    width: 80px;
+  }
+
+  .all-amenities h3 {
+    margin-left: 0;
+    padding-left: 40px;
+    font-size: 38px;
+  }
+
+  .explore-blocks {
+    padding: 40px;
+  }
+
+  .all-amenities .gold-lines.vertical {
+    left: 15px;
+  }
+
+  .amenities .bottom-img {
+    width: 90%;
+    bottom: 100px;
+  }
+
+  .amenities .add-on {
+    padding: 0 40px;
+  }
+
+  .scenery-block.flex {
+    flex-direction: column;
+  }
+
+  .amenities .scenery-block img {
+    width: 100%;
+  }
+
+  .book .booking-container h3 {
+    font-size: 32px;
+  }
+
+  .contact .contact-form {
+    width: 80%;
+  }
+
+  .contact h3 {
+    font-size: 40px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .play .play-content {
+    padding: 40px;
+    padding-top: 0;
+  }
+
+  .lodge-kitchen-section {
+    height: 500px;
+  }
+
+  .lodge-kitchen-section .green-section {
+    width: 70%;
+    left: 0;
+  }
+
+  .lodge-kitchen-section img {
+    height: unset;
+    margin-top: 40px;
+  }
+
+  .lodge-kitchen-section .green-section {
+    height: 70%;
+  }
+
+  .floor-plan-section {
+    padding: 0;
+  }
+
+  .floor-plan-section .plan-col {
+    padding: 40px;
+  }
+
+  .amenities .section-h2-container {
+    margin-top: 0;
+  }
+
+  .floor-plan-section .gold-lines.horizontal {
+    display: none;
+  }
+
+  .floor-plan-section .plan-col.col1 {
+    padding-bottom: 40px;
+  }
+
+  .floor-plan-section .floorplan-main {
+    margin-top: 0;
+  }
+
+  .lodge-green-section {
+    padding: 40px 0;
+    height: 1219px;
+  }
+
+  .lodge-green-section .lodge-green-info-cont {
+    padding: 40px 40px;
+  }
+
+  .lodge-green-section .lodge-green-info-cont {
+    height: 73%;
+  }
+
+  .lodge-green-section .room-slider {
+    bottom: 13%;
+  }
+
+  .lodge-green-section .lodge-green-info-cont .add-on {
+    font-size: 30px;
+  }
+
+  .slider-nav.lodge-gallery {
+    right: 10px;
+  }
+
+  .lodge .section-h2-container {
+    padding: 0 40px 0 0;
+  }
+
+  .lodge .section-h2-container h2, h2, .about h2 {
+    padding: 0;
+    font-size: 48px;
+  }
+
+  .about h2 {
+    margin-bottom: 50px;
+  }
+
+  .room-container .room-info-container .room-info-inner-wrapper {
+    padding: 0 30px;
+  }
+
+  .room-container {
+    margin-bottom: 158px;
+  }
+
+  .numbers-section .num-container .number-info.mid-num-info {
+    min-width: unset;
+    padding: 0;
+  }
+
+  .numbers-section .num-container .number {
+    left: 36%;
+  }
+
+  .numbers-section .num-container .number.mid-num {
+    left: 28%;
+  }
+
+  .numbers-section {
+    margin-top: 0;
+  }
+
+  .about-info-container {
+    padding: 40px;
+  }
+
+  .about-info-container .green-slice {
+    height: 21%;
+    top: 75px;
+  }
+
+  .about-info-container img {
+    margin: 0;
+    width: 100%;
+    height: unset;
+  }
+
+  .about-info-container .about-info-text-container {
+    margin-top: 100px;
+  }
+
+  .about .green-section {
+    padding: 40px;
+    padding-top: 50px;
+    margin-right: 0;
+  }
+
+  .about .gold-lines.horizontal {
+    top: 20px;
+    right: 20px;
+    width: 80%;
+  }
+
+  .about .green-text-wrapper {
+    margin-left: 0;
+  }
+
+  .display-img-holder {
+    margin-top: unset;
+  }
+
+  .about .gold-lines.vertical {
+    left: 20px;
+  }
+
+  .about .gold-lines.vertical .line1 {
+    width: 1px;
+  }
+
+  .about .gold-lines.vertical .line2 {
+    display: none;
+  }
+
+  .about .green-text-wrapper .add-on {
+    margin-top: 53px;
+    margin-bottom: 53px;
+    font-size: 28px;
+  }
+
+  .display-img-holder {
+    height: unset;
+    margin-bottom: 300px;
+  }
+
+  .display-img-holder .large-display-img {
+    width: 100%;
+    height: unset;
+    object-fit: cover;
+  }
+
+  .standout {
+    padding: 100px 40px;
+  }
+
+  .header-content {
+    padding: 20px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+  }
+
+  .header-content h1 {
+    width: 100%;
+    max-width: 100%;
+    font-size: 38px;
+  }
+
+  .header-content nav {
+    margin-bottom: 50px;
+  }
+
+  .nav-pages {
+    width: 100%;
+    align-content: center;
+    justify-content: center;
+  }
+
+  .nav-pages li {
+    min-width: 66px;
+    height: 48px;
+  }
+
+  .nav-pages button {
+    margin: 0 80px;
+  }
+
+  .header-content .cta {
+    display: none;
+  }
+
+  .mobile-tint {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffffa4;
   }
 }
 
