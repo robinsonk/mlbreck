@@ -82,22 +82,27 @@ body {
 }
 
 .header-content {
-  padding: 48px 10% 304px 10%;
+  padding: 0 0 304px 0;
 }
 .header-content nav {
   margin-bottom: 273px;
+  position: fixed;
+  width: 100%;
+  padding: 20px 10%;
+  z-index: 9;
+  background-color: #f5f6f8f3;
 }
 .header-content nav img {
-  width: 110px;
+  width: 80px;
 }
 .header-content h1 {
-  width: 60%;
-  max-width: 711px;
+  width: 100%;
+  max-width: 811px;
   font-family: freight-big-pro, serif;
   font-size: 72px;
   font-weight: 300;
   color: #4E4E4E;
-  padding: 0;
+  padding: 248px 0 0 10%;
   margin: 0 0 87px 0;
 }
 .header-content .cta {
@@ -105,6 +110,7 @@ body {
   border: none;
   border-bottom: 2px solid #C2986B;
   padding: 0 150px 10px 0;
+  margin-left: 10%;
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
   color: #4E4E4E;
@@ -170,7 +176,7 @@ body {
   }
 
   .header-content {
-    padding: 48px 48px 304px 48px;
+    padding: 0 0 304px 0;
   }
   .header-content nav {
     margin-bottom: 150px;
@@ -181,9 +187,10 @@ body {
   }
   .header-content h1 {
     text-align: center;
-    width: 80%;
+    width: 60%;
     max-width: 80%;
     margin: 0 auto 90px auto;
+    padding-left: 0;
   }
   .header-content a {
     text-decoration: none;
@@ -933,6 +940,10 @@ iframe {
   transition: all 0.4s;
 }
 
+.mobile-only {
+  display: none;
+}
+
 @media (max-width: 1433px) {
   .lodge-green-section .lodge-green-info-cont {
     padding: 100px;
@@ -1089,8 +1100,17 @@ iframe {
     display: none;
   }
 
+  .nav {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
   .nav-pages {
-    margin-top: 50px;
+    margin-top: 20px;
+    justify-content: center;
+    width: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
   }
 
   .standout .standout-text {
@@ -1521,17 +1541,20 @@ iframe {
   .header-content {
     padding: 20px;
     padding-bottom: 50px;
-    padding-top: 50px;
+    padding-top: 0px;
   }
 
   .header-content h1 {
     width: 100%;
     max-width: 100%;
-    font-size: 38px;
+    font-size: 48px;
+    margin-top: 100px;
+    padding-top: 0;
   }
 
   .header-content nav {
     margin-bottom: 50px;
+    display: none;
   }
 
   .nav-pages {
@@ -1558,6 +1581,63 @@ iframe {
     width: 100%;
     height: 100%;
     background-color: #ffffffa4;
+  }
+
+  .mobile-only {
+    display: block;
+  }
+  .mobile-only.mobile-img {
+    width: 160px;
+    margin: 0 auto 0 auto;
+    padding-top: 100px;
+  }
+  .mobile-only.mobile-menu {
+    display: block;
+    width: 70%;
+    height: 60%;
+    position: fixed;
+    padding: 0;
+    background-color: transparent;
+    right: 0;
+  }
+  .mobile-only.mobile-menu a {
+    position: relative;
+    display: block;
+    width: max-content;
+    margin: 10px 20px 0 auto;
+    font-size: 45px;
+    color: #C2986B;
+    z-index: 8;
+  }
+  .mobile-only.mobile-menu .mobile-menu-open {
+    display: none;
+    background-color: #324932c9;
+    padding: 20px;
+    padding-top: 60px;
+    margin-top: -60px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+  .mobile-only.mobile-menu .mobile-menu-open ul {
+    margin-bottom: 0;
+  }
+  .mobile-only.mobile-menu .mobile-menu-open ul li {
+    list-style-type: none;
+  }
+  .mobile-only.mobile-menu .mobile-menu-open a {
+    color: white;
+    text-align: right;
+    font-size: 26px;
+  }
+  .mobile-only.mobile-menu .mobile-menu-open a button {
+    padding: 15px;
+    background-color: #C2986B;
+    color: white;
+    border: 1px solid #C2986B;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-top: 20px;
   }
 }
 

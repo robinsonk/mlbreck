@@ -56,6 +56,23 @@ function fadingElements() {
     });
 };
 
+function mobileMenu(e) {
+    let menuOpen = false;
+
+    $('#mobileToggle').on('click', function(e) {
+        if (menuOpen == true) {
+            menuOpen = false;
+            console.log(menuOpen)
+            $('.mobile-menu-open').fadeOut('slow');
+        } else {
+            e.preventDefault();
+            $('.mobile-menu-open').fadeIn('slow');
+            menuOpen = true;
+        }
+
+    })
+}
+
 
 
 
@@ -64,3 +81,4 @@ function fadingElements() {
 
 
 $(fadingElements);
+$(mobileMenu);
